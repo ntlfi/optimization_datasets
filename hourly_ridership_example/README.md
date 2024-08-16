@@ -20,7 +20,7 @@ This dataset contains **hourly ridership data** for the New York City Metropolit
 | Data Label | Data Type | Data Description |
 |:---:|:---:|:---|
 | **timestamp** | [floating timestamp](https://dev.socrata.com/docs/datatypes/floating_timestamp.html#,) | Timestamp payment took place in local time. All transactions here are rounded down to the nearest hour. For example, a swipe that took place at 1:37pm will be reported as having taken place at 1pm. |
-| **station_id** | string | A unique identifier for station complexes |
+| **station_id** | integer | A unique identifier for station complexes |
 | **station_name** | string | The subway complex where an entry swipe or tap took place. Large subway complexes, such as *Times Square* and *Fulton Center*, may contain multiple subway lines. The subway complex name includes the routes that stop at the complex in parenthesis, such as Zerega Av (6). |
 | **ridership** | integer | Total number of riders that entered a subway complex. Note that this number counts those individuals who entered a subway complex via a free bus-to-subway, or free out-of-network transfer. |
 | **latitude** | float | Latitude for the specified subway complex. Note that, for those large subway complexes, such as *Times Square* and *Fulton Center*, may have multiple latitude and longitude entries. |

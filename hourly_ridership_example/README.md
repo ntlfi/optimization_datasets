@@ -44,4 +44,4 @@ This dataset contains **hourly ridership data** for the New York City Metropolit
 
 
 ## Data Source
-This dataset is sourced from [**`NY Open** Data`**](https://data.ny.gov/Transportation/MTA-Subway-Hourly-Ridership-Beginning-February-202/wujg-7c2s/about_data). See [here](https://github.com/ntlfighting/optimization_datasets/blob/main/hourly_ridership_example/fetch.py) for the code used to generate this dataset.
+This dataset is sourced from [**`NY Open Data`**](https://data.ny.gov/Transportation/MTA-Subway-Hourly-Ridership-Beginning-February-202/wujg-7c2s/about_data). See [here](https://github.com/ntlfighting/optimization_datasets/blob/main/hourly_ridership_example/fetch.py) for the code used to generate this dataset.

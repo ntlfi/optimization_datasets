@@ -1,5 +1,4 @@
 ## MTA Subway Hourly Ridership: Beginning February 2022
----
 
 ### Dataset Description
 This dataset contains hourly ridership data for the New York City Metropolitan Transportation Authority (MTA) subway system. 
@@ -9,33 +8,38 @@ This dataset contains hourly ridership data for the New York City Metropolitan T
 |   |   |
 |:---:|:---:|
 | **Data Provider** | Metropolitan Transportation Authority (MTA) |
-| **Time Period** | July 16 - July 31, 2024 |
+| **Time Period** | July 15 - July 24, 2024 |
 | **Data Last Updated** | July 31, 2024 |
-| **Posting Frequency** | August 15, 2024 |
-| **Number of Rows** |  |
-| **Number of Columns** |  |
+| **Posting Frequency** | Weekly |
+| **Number of Columns** | 6 |
+| **Number of Rows** | 30914 |
 
 ### Data Dictionary
 
 | Data Label | Data Type | Data Description |
 |:---:|:---:|:---|
-| timestamp | [floating timestamp](https://dev.socrata.com/docs/datatypes/floating_timestamp.html#,) | Timestamp payment took place in local time. All transactions here are rounded down to the nearest hour. For example, a swipe that took place at 1:37pm will be reported as having taken place at 1pm. |
-| station_id | alphanumeric | A unique identifier for station complexes |
-| station_name | string | The subway complex where an entry swipe or tap took place. Large subway complexes, such as Times Square and Fulton Center, may contain multiple subway lines. The subway complex name includes the routes that stop at the complex in parenthesis, such as Zerega Av (6). |
-| fare_class_category | string | The class of fare payment used for the trip. The consolidated categories are: <br> • MetroCard – Fair Fare <br> • MetroCard – Full Fare <br> • MetroCard – Other <br> • MetroCard – Senior & Disability <br> • MetroCard – Students <br> • MetroCard – Unlimited 30-Day <br> • MetroCard – Unlimited 7-Day <br> • OMNY – Full Fare <br> • OMNY – Other <br> • OMNY – Seniors & Disabilities |
-| ridership | integer | Total number of riders that entered a subway complex via OMNY or MetroCard at the specific hour and for that specific fare type. |
-| transfers | integer | Number of individuals who entered a subway complex via a free bus-to-subway, or free out-of-network transfer. This represents a subset of total ridership, meaning that these transfers are already included in the preceding ridership column. Transfers that take place within a subway complex (e.g., individuals transferring from the 2 to the 4 train within Atlantic Avenue) are not captured here. |
-| latitude | float | Latitude for the specified subway complex. |
-| longitude | float | Longitude for the specified subway complex. |
+| **timestamp** | [floating timestamp](https://dev.socrata.com/docs/datatypes/floating_timestamp.html#,) | Timestamp payment took place in local time. All transactions here are rounded down to the nearest hour. For example, a swipe that took place at 1:37pm will be reported as having taken place at 1pm. |
+| **station_id** | string | A unique identifier for station complexes |
+| **station_name** | string | The subway complex where an entry swipe or tap took place. Large subway complexes, such as *Times Square* and *Fulton Center*, may contain multiple subway lines. The subway complex name includes the routes that stop at the complex in parenthesis, such as Zerega Av (6). |
+| **ridership** | integer | Total number of riders that entered a subway complex. Note that this number counts those individuals who entered a subway complex via a free bus-to-subway, or free out-of-network transfer. |
+| **latitude** | float | Latitude for the specified subway complex. Note that, for those large subway complexes, such as *Times Square* and *Fulton Center*, may have multiple latitude and longitude entries. |
+| **longitude** | float | Longitude for the specified subway complex. |
 
 ### Example Data
-|    | timestamp               |   station_id | station_name   | fare_class_category         |   ridership |   transfers |   latitude |   longitude |
-|---:|:------------------------|-------------:|:---------------|:----------------------------|------------:|------------:|-----------:|------------:|
-|  0 | 2023-12-27T09:00:00.000 |          228 | 23 St (F,M)    | OMNY - Seniors & Disability |           2 |           0 |    40.7429 |    -73.9928 |
-|  1 | 2023-12-27T09:00:00.000 |          162 | 50 St (C,E)    | Metrocard - Full Fare       |          87 |           1 |    40.7625 |    -73.986  |
-|  2 | 2023-12-27T09:00:00.000 |          333 | Wall St (2,3)  | OMNY - Full Fare            |         165 |           2 |    40.7068 |    -74.0091 |
-|  3 | 2023-12-27T09:00:00.000 |          477 | 72 St (Q)      | Metrocard - Fair Fare       |           7 |           0 |    40.7688 |    -73.9584 |
-|  4 | 2023-12-27T09:00:00.000 |          144 | Dyckman St (A) | Metrocard - Full Fare       |          44 |           0 |    40.8655 |    -73.9273 |
+|    | timestamp              |   station_id | station_name      |   latitude |   longitude |   ridership |
+|---:|:-----------------------|-------------:|:------------------|-----------:|------------:|------------:|
+|  0 | 2024-7-15T00:00:00.000 |           10 | 49 St (N,R,W)     |    40.7599 |    -73.9841 |         267 |
+|  1 | 2024-7-15T00:00:00.000 |          103 | Bowery (J,Z)      |    40.7203 |    -73.9939 |          66 |
+|  2 | 2024-7-15T00:00:00.000 |          107 | Broad St (J,Z)    |    40.7065 |    -74.0111 |          24 |
+|  3 | 2024-7-15T00:00:00.000 |          118 | 3 Av (L)          |    40.7328 |    -73.9861 |          97 |
+|  4 | 2024-7-15T00:00:00.000 |          119 | 1 Av (L)          |    40.731  |    -73.9816 |         130 |
+|  5 | 2024-7-15T00:00:00.000 |           13 | 28 St (R,W)       |    40.7455 |    -73.9887 |         127 |
+|  6 | 2024-7-15T00:00:00.000 |           14 | 23 St (R,W)       |    40.7413 |    -73.9893 |          90 |
+|  7 | 2024-7-15T00:00:00.000 |          143 | Inwood-207 St (A) |    40.8681 |    -73.9199 |          51 |
+|  8 | 2024-7-15T00:00:00.000 |          144 | Dyckman St (A)    |    40.8655 |    -73.9273 |          28 |
+|  9 | 2024-7-15T00:00:00.000 |          145 | 190 St (A)        |    40.859  |    -73.9342 |          12 |
+
+
 
 ### Data Source
->  [**NY Open Data**](https://data.ny.gov/Transportation/MTA-Subway-Hourly-Ridership-Beginning-February-202/wujg-7c2s/about_data)
+>  This dataset is sourced from [**`NY Open Data`**](https://data.ny.gov/Transportation/MTA-Subway-Hourly-Ridership-Beginning-February-202/wujg-7c2s/about_data). See here for the code used to generate this dataset.

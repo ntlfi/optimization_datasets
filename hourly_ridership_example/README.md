@@ -1,7 +1,7 @@
 # MTA Subway Hourly Ridership
 
 ## Dataset Description
-This dataset contains **hourly ridership data** for the New York City Metropolitan Transportation Authority (MTA) *subway* system. In a given period, the dataset provides the total number of riders that entered a subway complex in *Manhattan* for each hour. The dataset also includes geographical information for each subway complex, such as latitude and longitude.
+This [dataset](https://github.com/ntlfi/optimization_datasets/tree/main/hourly_ridership_example) contains **hourly ridership data** for the New York City Metropolitan Transportation Authority (MTA) *subway* system. In a given period, the dataset provides the total number of riders that entered a subway complex in *Manhattan* for each hour. The dataset also includes geographical information for each subway complex, such as latitude and longitude.
 
 ## Dataset Summary
 

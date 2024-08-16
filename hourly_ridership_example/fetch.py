@@ -84,7 +84,7 @@ res = res.sort_values(by=["timestamp", "station_id"], ascending=[True, True])
 
 # Save as CSV
 current_directory = os.path.dirname(os.path.abspath(__file__))
-res.to_csv(f"{current_directory}/hourly_ridership_example.csv")
+res.to_csv(f"{current_directory}/hourly_ridership_manhattan.csv")
 
 # Print the first 5 rows as markdown
 print()

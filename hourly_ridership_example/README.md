@@ -1,20 +1,21 @@
-## MTA Subway Hourly Ridership: Beginning February 2022
+# MTA Subway Hourly Ridership
 
-### Dataset Description
-This dataset contains hourly ridership data for the New York City Metropolitan Transportation Authority (MTA) subway system. 
+## Dataset Description
+This dataset contains **hourly ridership data** for the New York City Metropolitan Transportation Authority (MTA) *subway* system. In a given period, the dataset provides the total number of riders that entered a subway complex in *Manhattan* for each hour. The dataset also includes geographical information for each subway complex, such as latitude and longitude.
 
-### Dataset Summary
+## Dataset Summary
 
 |   |   |
 |:---:|:---:|
 | **Data Provider** | Metropolitan Transportation Authority (MTA) |
+| **Borough** | Manhattan |
 | **Time Period** | July 15 - July 24, 2024 |
 | **Data Last Updated** | July 31, 2024 |
 | **Posting Frequency** | Weekly |
 | **Number of Columns** | 6 |
 | **Number of Rows** | 30914 |
 
-### Data Dictionary
+## Data Dictionary
 
 | Data Label | Data Type | Data Description |
 |:---:|:---:|:---|
@@ -24,8 +25,9 @@ This dataset contains hourly ridership data for the New York City Metropolitan T
 | **ridership** | integer | Total number of riders that entered a subway complex. Note that this number counts those individuals who entered a subway complex via a free bus-to-subway, or free out-of-network transfer. |
 | **latitude** | float | Latitude for the specified subway complex. Note that, for those large subway complexes, such as *Times Square* and *Fulton Center*, may have multiple latitude and longitude entries. |
 | **longitude** | float | Longitude for the specified subway complex. |
+> Currently, `floating timestamp` is a string in the format of `YYYY-MM-DDTHH:MM:SS.SSS`. This format is subject to change in the future.
 
-### Example Data
+## Example Data
 |    | timestamp              |   station_id | station_name      |   latitude |   longitude |   ridership |
 |---:|:-----------------------|-------------:|:------------------|-----------:|------------:|------------:|
 |  0 | 2024-7-15T00:00:00.000 |           10 | 49 St (N,R,W)     |    40.7599 |    -73.9841 |         267 |
@@ -41,5 +43,5 @@ This dataset contains hourly ridership data for the New York City Metropolitan T
 
 
 
-### Data Source
->  This dataset is sourced from [**`NY Open Data`**](https://data.ny.gov/Transportation/MTA-Subway-Hourly-Ridership-Beginning-February-202/wujg-7c2s/about_data). See here for the code used to generate this dataset.
+## Data Source
+This dataset is sourced from [**`NY Open** Data`**](https://data.ny.gov/Transportation/MTA-Subway-Hourly-Ridership-Beginning-February-202/wujg-7c2s/about_data). See [here](https://github.com/ntlfighting/optimization_datasets/blob/main/hourly_ridership_example/fetch.py) for the code used to generate this dataset.

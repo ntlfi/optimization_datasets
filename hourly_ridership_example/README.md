@@ -8,7 +8,7 @@ This [dataset](https://github.com/ntlfi/optimization_datasets/blob/main/hourly_r
 |   |   |
 |:---:|:---:|
 | **Data Provider** | Metropolitan Transportation Authority (MTA) |
-| **Borough** | Manhattan |
+| **Region** | Manhattan |
 | **Time Period** | July 15 - July 24, 2024 |
 | **Data Last Updated** | July 31, 2024 |
 | **Posting Frequency** | Weekly |

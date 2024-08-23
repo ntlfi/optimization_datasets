@@ -5,12 +5,13 @@ from sodapy import Socrata
 client = Socrata("data.ny.gov", None)
 results = client.get("juva-r6g2", limit=3000)
 results_df = pd.DataFrame.from_records(results)
-all_zipcodes = sorted(results_df["zip_code"].unique())
+all_zipcodes = sorted(results_df["zip_code"].map(lambda x: str(x)).unique())
 print(all_zipcodes)
 
 
 list_data = []
 for zipcode in all_zipcodes:
+    url = f"https://api.census.gov/data/2022/acs/acs5/subject?get=group(S0101)&ucgid=0100000US,860Z200US{zipcode}"
     url = f"https://api.census.gov/data/2022/acs/acs5/subject?get=group(S0101)&ucgid=860Z200US{zipcode}"
     # url = "https://api.census.gov/data/2022/acs/acs5/subject?get=group(S0101)&ucgid=860Z200US11361"
     try:
@@ -42,7 +43,7 @@ for zipcode in all_zipcodes:
         ]
         df = df[list_columns]
         df = df.rename(columns={
-            "S0101_C01_001E": "Total",
+            "S0101_C01_001E": "total",
             "S0101_C01_002E": "-5", 
             "S0101_C01_003E": "5-9",
             "S0101_C01_004E": "10-14",
@@ -62,11 +63,13 @@ for zipcode in all_zipcodes:
             "S0101_C01_018E": "80-84",
             "S0101_C01_019E": "85+",
         })
-        df["zipcode"] = zipcode
+        df["zip_code"] = str(zipcode)
         print(df)
         list_data.append(df)
     except:
-        print(f"Missing: {zipcode}")
+        # print(f"Missing: {zipcode}")
+        pass
 
 final_df = pd.concat(list_data)
-final_df.to_csv("population.csv", index=False)
+final_df = final_df[["zip_code", "total", "-5", "5-9", "10-14", "15-19", "20-24", "25-29", "30-34", "35-39", "40-44", "45-49", "50-54", "55-59", "60-64", "65-69", "70-74", "75-79", "80-84", "85+"]]
+final_df.to_csv("nys_population_by_zipcode_age.csv", index=False)

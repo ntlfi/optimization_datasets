@@ -3,6 +3,7 @@
 ## Dataset Description
 This [dataset]() contains basic information for facilities of **regulated child care programs** in New York State. The dataset provides information on the capacity of each facility, for each age group.
 
+> The data does not include any information regarding day care center programs in New York City, as those programs are regulated by the New York City Department of Health and Mental Hygiene. The inspection data reflects only reflects inspections that were conducted where violations were cited. It does not reflect inspections where no violations are cited.
 
 
 ## Dataset Summary

@@ -1,0 +1,3 @@
+# MTA Subway Service Delivered: Beginning 2020
+
+Service Delivered measures the percentage of scheduled trains that are actually provided during **peak hours on weekdays** (7 AM to 10 AM and 4 PM to 7 PM) and **weekends** (10 AM to 6 PM) for a given month. This dataset covers data from 2020 and on. For data between 2015 and 2019, use dataset https://data.ny.gov/Transportation/MTA-Subway-Service-Delivered-2015-2019/32ch-sei3.

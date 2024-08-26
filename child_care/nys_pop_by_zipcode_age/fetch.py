@@ -11,9 +11,7 @@ print(all_zipcodes)
 
 list_data = []
 for zipcode in all_zipcodes:
-    url = f"https://api.census.gov/data/2022/acs/acs5/subject?get=group(S0101)&ucgid=0100000US,860Z200US{zipcode}"
     url = f"https://api.census.gov/data/2022/acs/acs5/subject?get=group(S0101)&ucgid=860Z200US{zipcode}"
-    # url = "https://api.census.gov/data/2022/acs/acs5/subject?get=group(S0101)&ucgid=860Z200US11361"
     try:
         response = requests.get(url)
         data = response.json()

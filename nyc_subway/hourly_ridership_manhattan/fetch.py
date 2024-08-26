@@ -86,7 +86,7 @@ res = res.sort_values(by=["timestamp", "station_id"], ascending=[True, True])
 current_directory = os.path.dirname(os.path.abspath(__file__))
 res.to_csv(f"{current_directory}/hourly_ridership_manhattan.csv")
 
-# Print the first 5 rows as markdown
+# Print the first 10 rows as markdown
 print()
 print("The number of rows in the dataset is", len(res))
 print("The number of columns in the dataset is", len(res.columns))

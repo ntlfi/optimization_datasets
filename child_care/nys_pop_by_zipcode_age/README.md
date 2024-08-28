@@ -38,7 +38,7 @@ This [dataset](https://github.com/ntlfi/optimization_datasets/blob/main/child_ca
 | **80-84** | string | The total population for 80 to 84 years old |
 | **85+** | string | The total population for 85 years old and older |
 
-> * There exist some regions with a population of 0.
+> There exist some regions with a population of 0.
 
 
 ## Example Data

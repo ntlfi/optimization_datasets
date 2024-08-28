@@ -1,7 +1,7 @@
 # MTA Subway Hourly Ridership
 
 ## Dataset Description
-This [dataset](https://github.com/ntlfi/optimization_datasets/blob/main/hourly_ridership_example/hourly_ridership_manhattan.csv) contains **hourly ridership data** for the New York City Metropolitan Transportation Authority (MTA) *subway* system. In a given period, the dataset provides the total number of riders that entered a subway complex in *Manhattan* for each hour. The dataset also includes geographical information for each subway complex, such as latitude and longitude.
+This [dataset](https://github.com/ntlfi/optimization_datasets/blob/main/nyc_subway/hourly_ridership_manhattan/hourly_ridership_manhattan.csv) contains **hourly ridership data** for the New York City Metropolitan Transportation Authority (MTA) *subway* system. In a given period, the dataset provides the total number of riders that entered a subway complex in *Manhattan* for each hour. The dataset also includes geographical information for each subway complex, such as latitude and longitude.
 
 ## Dataset Summary
 
@@ -44,4 +44,4 @@ This [dataset](https://github.com/ntlfi/optimization_datasets/blob/main/hourly_r
 
 
 ## Data Source
-This dataset is sourced from [**`NY Open Data`**](https://data.ny.gov/Transportation/MTA-Subway-Hourly-Ridership-Beginning-February-202/wujg-7c2s/about_data). See [here](https://github.com/ntlfi/optimization_datasets/blob/main/hourly_ridership_example/fetch.py) for the code used to generate this dataset.
+This dataset is sourced from [**`NY Open Data`**](https://data.ny.gov/Transportation/MTA-Subway-Hourly-Ridership-Beginning-February-202/wujg-7c2s/about_data). See [here](https://github.com/ntlfi/optimization_datasets/blob/main/nyc_subway/hourly_ridership_manhattan/fetch.py) for the code used to generate this dataset.

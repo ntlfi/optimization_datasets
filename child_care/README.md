@@ -4,6 +4,25 @@
 
 Areas where there are too few licensed slots for the number of children who need care are known as **child care deserts**, and more than half of America’s children live in one.[^3] To address this issue, the government has announced substantial grants to help child care providers maintain their services and expand their operations. For example, **New York State** (NYS) identified **$100M** to build and expand child care capacity in areas with the least supply.[^4]
 
+## Available Data
+- `child_care_regulated.csv`: This dataset contains the information of child care facilities in New York State. 
+- `population.csv`: This dataset contains the population of children in different ranges of ages (e.g., 0-5, 5-10, 10-14, etc.) in each zipcode region in New York State.
+- To build a new facility, we assume the government needs to spend $c_{new}$ that depends on the size of the new facility. We estimate the cost of building a new facility based on [WEBSITE LINK]. The following table shows the cost of building a new facility based on the size of the facility:
+
+| Size of Facility | Cost ($) |
+|:----------------:|:--------:|
+| 25 slots         |  50000   |
+| 75 slots         |  95000   |
+| 150 slots        |  125000  |
+
+- To expand an existing facility, we assume if the government wants to expand the total capcity of a facility to $(1 + x) n$ where $x \in (0, 0.5]$ and $n$ is the current capacity, then the cost is given by the following formula:
+$$ c_{ext} = 10000 x.$$
+<!-- For example, if the current number of slots is 50 and the government wants to expand it to 75, the cost of expansion is $c_{ext} = 10000 \times \frac{75}{50} = 15000$ (You can set $x$ as a continuous variable in your optimization model). -->
+
+
+
+
+
 ## Problem A
 Let's assume the NYS government plan to eliminate **child care deserts** in New York State. In particular, an area $a$ is defined as a child care deserts *if* 
 $$ s_a \geq \frac{1}{3}\, p_a $$

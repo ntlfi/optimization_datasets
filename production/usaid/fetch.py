@@ -19,7 +19,7 @@ df.to_csv(f'{pwd}/supply_chain_pricing.csv')
 
 
 
-countries = df['country'].unique()
-# Save country specific data to CSV files
-airports = pd.DataFrame({"country": countries})
-airports.to_csv(f'{pwd}/airports/airports.csv')
+# countries = df['country'].unique()
+# # Save country specific data to CSV files
+# airports = pd.DataFrame({"country": countries})
+# airports.to_csv(f'{pwd}/airports/airports.csv')

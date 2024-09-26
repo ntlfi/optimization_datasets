@@ -1,14 +1,14 @@
 ,country,seaport_name,latitude,longitude
-0,Côte d'Ivoire,Abidjan,5.316667°N,4.033333°W
-1,Vietnam,Ho Chi Minh City,10.75°N,106.666667°E
-2,Nigeria,Lagos,6.45°N,3.4°E
-3,Zambia,Lusaka,15.416667°S,28.283333°E
-4,Tanzania,Dar es Salaam,6.8°S,39.283333°E
-5,Rwanda,Kigali,1.95°S,30.05°E
-6,Haiti,Port-au-Prince,18.533333°N,72.333333°W
-7,Zimbabwe,Harare,17.833333°S,31.05°E
-8,Ethiopia,Addis Ababa,9.033333°N,38.7°E
-9,South Africa,Johannesburg,26.2°S,28.033333°E
+0,Côte d'Ivoire,Abidjan port,5.2869°N, 4.0236°W
+1,Vietnam,Tan Cang Cat Lai,10°45'25''N,106°47'40''E
+2,Nigeria,Lagos Port Complex,6.45°N,3.4°E
+3,Zambia,,,
+4,Tanzania,Port of Dar es Salaam,6°50′6.40″S,39°17′37.65″E
+5,Rwanda,,,
+6,Haiti,Port international de Port-au-Prince,18.533333°N,72.333333°W
+7,Zimbabwe,,,
+8,Ethiopia,Port of Djibouti,11.6087°N,43.1425°E
+9,South Africa,Cape Town Harbour,33°54'S,18°26'E
 10,Guyana,Georgetown,6.8°N,58.15°W
 11,Namibia,Windhoek,22.566667°S,17.083333°E
 12,Botswana,Gaborone,24.633333°S,25.9°E

@@ -11,3 +11,8 @@ df = df[["country", "shipment_mode", "scheduled_delivery_date", "delivered_to_cl
 
 # Save the data to a CSV file
 df.to_csv('supply_chain_pricing.csv')
+
+countries = df['country'].unique()
+
+# Save country specific data to CSV files
+countries.to_csv('./airports/airports.csv')

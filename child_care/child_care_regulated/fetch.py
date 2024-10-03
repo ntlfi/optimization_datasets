@@ -18,7 +18,7 @@ while len_results == 3000:
     start += 1
 results_df = pd.concat(list_data).reset_index(drop=True)
 
-df = results_df[['facility_id', 'program_type', 'region_code', 'county', 'facility_status', 'facility_name', 'city', 'state', 'zip_code', 'school_district_name', 'capacity_description', 'infant_capacity', 'toddler_capacity', 'preschool_capacity', 'school_age_capacity', 'total_capacity']]
+df = results_df[['facility_id', 'program_type', 'region_code', 'county', 'facility_status', 'facility_name', 'city', 'state', 'zip_code', 'school_district_name', 'capacity_description', 'infant_capacity', 'toddler_capacity', 'preschool_capacity', 'school_age_capacity', 'total_capacity', 'latitude', 'longitude']]
 
 seq = df["capacity_description"]
 list = []
@@ -53,6 +53,6 @@ i = 12790
 print(df.loc[i]['facility_id'])
 df.at[i, 'total_capacity'] = df.loc[i]['sum']
 
-df = df[['facility_id', 'program_type', 'facility_status', 'facility_name', 'city' , 'zip_code', 'school_district_name', 'infant_capacity', 'toddler_capacity', 'preschool_capacity', 'school_age_capacity', 'children_capcity', 'total_capacity']]
+df = df[['facility_id', 'program_type', 'facility_status', 'facility_name', 'city' , 'zip_code', 'school_district_name', 'infant_capacity', 'toddler_capacity', 'preschool_capacity', 'school_age_capacity', 'children_capcity', 'total_capacity', 'latitude', 'longitude']]
 
 df.to_csv("child_care_regulated.csv", index=False)

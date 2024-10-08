@@ -40,7 +40,7 @@ df = df.astype({'children_capcity': 'int64',
                 'total_capacity': 'int64'})
 
 # check if sum('children_capacity', 'infant_capacity', 'toddler_capacity', 'preschool_capacity', 'school_age_capacity') == 'total_capacity'
-df['sum'] = df['children_capcity'] + df['infant_capacity'] + df['toddler_capacity'] + df['preschool_capacity'] + df['school_age_capacity']
+df['sum'] = df['children_capacity'] + df['infant_capacity'] + df['toddler_capacity'] + df['preschool_capacity'] + df['school_age_capacity']
 
 for i in range(len(df)):
     try: 

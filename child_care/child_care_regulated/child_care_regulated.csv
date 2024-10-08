@@ -1,4 +1,4 @@
-facility_id,program_type,facility_status,facility_name,city,zip_code,school_district_name,infant_capacity,toddler_capacity,preschool_capacity,school_age_capacity,children_capcity,total_capacity,latitude,longitude
+facility_id,program_type,facility_status,facility_name,city,zip_code,school_district_name,infant_capacity,toddler_capacity,preschool_capacity,school_age_capacity,children_capacity,total_capacity,latitude,longitude
 2416,FDC,Registration,"Bohrer, Barbara",Clinton,13323,Clinton,0,0,0,2,6,8,,
 5555,FDC,Registration,"Matey, Sally",Jamestown,14701,Jamestown,0,0,0,2,6,8,,
 9066,FDC,Registration,"Copeland, Denise",Wappingers Falls,12590,Wappingers,0,0,0,2,6,8,,

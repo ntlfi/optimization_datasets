@@ -1,0 +1,2 @@
+- We estimate the average individual income in each zip based on the number of received tax returns for each income bracket; 
+- We estimate the employment rate in each zip based on the total number of received tax returns and the total population. 
